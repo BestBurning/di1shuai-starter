@@ -17,7 +17,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @Configuration
 public class ExceptionConfig {
 
-    @RestControllerAdvice("com.di1shuai.sleep_early_api.controller")
+    @RestControllerAdvice("com.di1shuai.di1shuai_starter.controller")
     static class UnifiedExceptionHandler{
 
         @ExceptionHandler({BaseException.class,LoginException.class})
