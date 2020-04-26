@@ -1,0 +1,26 @@
+server:
+  port: 8886
+  servlet:
+    context-path: /api/
+
+spring:
+# application
+  profiles:
+    active: local
+  application:
+    name: di1shuai_starter
+# db
+  datasource:
+    url: jdbc:mysql://localhost:3306/di1shuai_starter?useSSL=false&characterEncoding=utf8&useUnicode=true&useAffectedRows=true&allowPublicKeyRetrieval=true
+    username: root
+    password: admin
+    driver-class-name: com.mysql.jdbc.Driver
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
